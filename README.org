@@ -1,0 +1,9 @@
+#+TITLE: Zettel Theme
+
+Theme for my _Zettelkasten_. Currently largely copied from [[https://github.com/jethrokuan/cortex][GitHub -
+jethrokuan/cortex: Hugo Theme for my Braindump]].
+
+** Search
+
+In order for search to work, you must have a `/content/search/_index.md` file,
+so that `/search` is a valid url.
