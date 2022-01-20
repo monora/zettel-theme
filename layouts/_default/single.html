@@ -4,6 +4,13 @@
     <div class="page" data-level="1">
       <div class="content">
         <h1>{{ .Title }}</h1>
+
+          <span class="tags">
+            Tags: 
+            {{ range .Params.tags }}
+            <a class="tag" href="/tags/{{ . | urlize }}/">{{ . }}</a>
+            {{ end }}
+          </span>
         {{ .Content }}
       </div>
       {{ partial "backlinks.html" . }}
