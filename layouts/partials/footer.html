@@ -1,3 +1,23 @@
 <footer>
-    Copyright {{now.Format "2006"}} {{ .Site.Params.author }}.
+    <!-- only pages display dates-->
+    {{ if eq .Kind "page"}}
+    <table>
+        {{with .Date}}
+            <tr>
+                <td>Erzeugt am:</td>
+                <td>
+                    {{.Format "02.01.2006 15:04"}}
+                </td>
+            </tr>
+        {{end}}
+        {{with .Lastmod}}
+            <tr>
+                <td>Letzte Änderung:</td>
+                <td>
+                    {{.Format "02.01.2006 15:04"}}
+                </td>
+            </tr>
+        {{end}}
+    </table>
+    {{end}}
 </footer>
