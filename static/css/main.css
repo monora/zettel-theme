@@ -5,7 +5,11 @@
   a {
     color: #809fff;
   }
-  
+
+  code {
+    background-color: #9f96963b;
+  }
+
   html,
   body {
     color: #eee;
